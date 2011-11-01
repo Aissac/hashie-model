@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{hashie-model}
-  s.version = "1.0.1"
+  s.version = "1.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = [%q{ZenCash.com}]
@@ -53,6 +53,7 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
+      s.add_runtime_dependency(%q<yajl-ruby>, [">= 0.8.0"])
       s.add_runtime_dependency(%q<activesupport>, [">= 3.1.1"])
       s.add_runtime_dependency(%q<activemodel>, [">= 3.1.1"])
       s.add_runtime_dependency(%q<money>, [">= 3.7.1"])
@@ -69,6 +70,7 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<guard-yard>, [">= 0"])
       s.add_development_dependency(%q<guard-bundler>, [">= 0"])
     else
+      s.add_dependency(%q<yajl-ruby>, [">= 0.8.0"])
       s.add_dependency(%q<activesupport>, [">= 3.1.1"])
       s.add_dependency(%q<activemodel>, [">= 3.1.1"])
       s.add_dependency(%q<money>, [">= 3.7.1"])
@@ -86,6 +88,7 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<guard-bundler>, [">= 0"])
     end
   else
+    s.add_dependency(%q<yajl-ruby>, [">= 0.8.0"])
     s.add_dependency(%q<activesupport>, [">= 3.1.1"])
     s.add_dependency(%q<activemodel>, [">= 3.1.1"])
     s.add_dependency(%q<money>, [">= 3.7.1"])

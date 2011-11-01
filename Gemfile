@@ -17,6 +17,7 @@ group :development do
   gem 'guard-bundler'
 end
 
+gem 'yajl-ruby',     '>= 0.8.0'
 gem 'activesupport', '>= 3.1.1'
 gem 'activemodel',   '>= 3.1.1'
 gem 'money',         '>= 3.7.1'

@@ -65,8 +65,9 @@ end
 
 RSpec::Matchers.define :act_as_array do |array_klass|
   match do |object|
+    klass    = object.class
     actual   = [object]
-    expected = array_klass.new([object.as_json])
+    expected = array_klass.new([object.deep_dup])
     
     actual == expected
   end
