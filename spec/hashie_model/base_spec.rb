@@ -80,6 +80,7 @@ describe HashieModel::Base do
     subject { bar }
     
     it { should have_property(:foos, ArrayOfFoo) }
+    it { foo.should act_as_array(ArrayOfFoo) }
   end
   
   describe "validations" do

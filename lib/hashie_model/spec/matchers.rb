@@ -63,11 +63,8 @@ RSpec::Matchers.define :deserialize_from do |json|
   end
 end
 
-RSpec::Matchers.define :act_as_array do
+RSpec::Matchers.define :act_as_array do |array_klass|
   match do |object|
-    klass       = object.class
-    array_klass = ZCQ::Component.const_get(:"ArrayOf#{klass.name.demodulize}s")
-    
     actual   = [object]
     expected = array_klass.new([object.as_json])
     
