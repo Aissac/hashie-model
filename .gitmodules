@@ -1,0 +1,3 @@
+[submodule "vendor/hashie"]
+	path = vendor/hashie
+	url = git://github.com/intridea/hashie.git

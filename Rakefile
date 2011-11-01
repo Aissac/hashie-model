@@ -12,15 +12,21 @@ end
 require 'rake'
 
 require 'jeweler'
+require './lib/hashie_model/version'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "hashie-model"
-  gem.homepage = "http://github.com/ihoka/hashie-model"
+  gem.homepage = "http://github.com/doublewide/hashie-model"
+  gem.version = HashieModel::Version::STRING
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
-  gem.email = "istvan.hoka@gmail.com"
-  gem.authors = ["Istvan Hoka"]
+  gem.summary = %Q{Hashie + ActiveModel 3.x}
+  gem.description = %Q{Hashie + ActiveModel 3, offering declared properties, validations, JSON serialization/deserialization}
+  gem.email = "istvan@zencash.com"
+  gem.authors = ["ZenCash.com"]
+  
+  gem.files = %w[README.md LICENSE.txt hashie-model.gemspec] +
+    [Dir.glob('lib/**/*.rb'), Dir.glob('vendor/hashie/lib/**/*.rb')].flatten
+    
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new
