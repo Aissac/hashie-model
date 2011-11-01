@@ -19,6 +19,7 @@ Gem::Specification.new do |s|
   s.files = [
     "LICENSE.txt",
     "README.md",
+    "hashie-model.gemspec",
     "lib/hashie-model.rb",
     "lib/hashie_model/array_of.rb",
     "lib/hashie_model/associated_validator.rb",
@@ -35,6 +36,7 @@ Gem::Specification.new do |s|
     "vendor/hashie/lib/hashie/extensions/key_conversion.rb",
     "vendor/hashie/lib/hashie/extensions/merge_initializer.rb",
     "vendor/hashie/lib/hashie/extensions/method_access.rb",
+    "vendor/hashie/lib/hashie/extensions/structure.rb",
     "vendor/hashie/lib/hashie/hash.rb",
     "vendor/hashie/lib/hashie/hash_extensions.rb",
     "vendor/hashie/lib/hashie/mash.rb",
