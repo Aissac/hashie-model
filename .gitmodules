@@ -1,3 +1,7 @@
-[submodule "vendor/hashie"]
-	path = vendor/hashie
-	url = git://github.com/intridea/hashie.git
+[submodule "vendor/hashie2"]
+	path = vendor/hashie2
+	url = git://github.com/doublewide/hashie2.git
+
+# [submodule "vendor/hashie"]
+#   path = vendor/hashie
+#   url = git://github.com/intridea/hashie.git

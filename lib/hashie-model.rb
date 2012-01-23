@@ -1,13 +1,13 @@
 require 'active_model'
 
-# Load vendored Hashie unless it is already loaded.
+# Load vendored Hashie2 unless it is already loaded.
 # We must have version >= 2.0 in order to get the Conversions API.
-if defined?(Hashie)
-  raise "Hashie >= 2.0.0 required by HashieModel." unless Hashie::VERSION.split('.').first.to_i >= 2
+if defined?(Hashie2)
+  raise "Hashie2 >= 2.0.0 required by Hashie2Model." unless Hashie2::VERSION.split('.').first.to_i >= 2
 else
-  $:.unshift File.expand_path(File.join('..', 'vendor', 'hashie', 'lib'), File.dirname(__FILE__))
+  $:.unshift File.expand_path(File.join('..', 'vendor', 'hashie2', 'lib'), File.dirname(__FILE__))
 end
-require 'hashie'
+require 'hashie2'
 
 require 'active_support'
 require 'active_support/core_ext'

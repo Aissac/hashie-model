@@ -19,13 +19,13 @@ Jeweler::Tasks.new do |gem|
   gem.homepage = "http://github.com/doublewide/hashie-model"
   gem.version = HashieModel::Version::STRING
   gem.license = "MIT"
-  gem.summary = %Q{Hashie + ActiveModel 3.x}
-  gem.description = %Q{Hashie + ActiveModel 3, offering declared properties, validations, JSON serialization/deserialization}
+  gem.summary = %Q{Hashie2 + ActiveModel 3.x}
+  gem.description = %Q{Hashie2 + ActiveModel 3, offering declared properties, validations, JSON serialization/deserialization}
   gem.email = "istvan@zencash.com"
   gem.authors = ["ZenCash.com"]
   
   gem.files = %w[README.md LICENSE.txt hashie-model.gemspec] +
-    [Dir.glob('lib/**/*.rb'), Dir.glob('vendor/hashie/lib/**/*.rb')].flatten
+    [Dir.glob('lib/**/*.rb'), Dir.glob('vendor/hashie2/lib/**/*.rb')].flatten
     
   # dependencies defined in Gemfile
 end

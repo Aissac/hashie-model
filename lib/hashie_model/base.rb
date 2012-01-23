@@ -1,8 +1,8 @@
 module HashieModel
-  class Base < Hashie::Dash
+  class Base < Hashie2::Dash
     extend ActiveModel::Naming
     
-    include Hashie::Extensions::Coercion
+    include Hashie2::Extensions::Coercion
     
     include ActiveModel::AttributeMethods
     include ActiveModel::Conversion

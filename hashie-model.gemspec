@@ -9,8 +9,8 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = [%q{ZenCash.com}]
-  s.date = %q{2011-12-04}
-  s.description = %q{Hashie + ActiveModel 3, offering declared properties, validations, JSON serialization/deserialization}
+  s.date = %q{2012-01-23}
+  s.description = %q{Hashie2 + ActiveModel 3, offering declared properties, validations, JSON serialization/deserialization}
   s.email = %q{istvan@zencash.com}
   s.extra_rdoc_files = [
     "LICENSE.txt",
@@ -27,27 +27,27 @@ Gem::Specification.new do |s|
     "lib/hashie_model/money.rb",
     "lib/hashie_model/spec/matchers.rb",
     "lib/hashie_model/version.rb",
-    "vendor/hashie/lib/hashie.rb",
-    "vendor/hashie/lib/hashie/clash.rb",
-    "vendor/hashie/lib/hashie/dash.rb",
-    "vendor/hashie/lib/hashie/extensions/coercion.rb",
-    "vendor/hashie/lib/hashie/extensions/deep_merge.rb",
-    "vendor/hashie/lib/hashie/extensions/indifferent_access.rb",
-    "vendor/hashie/lib/hashie/extensions/key_conversion.rb",
-    "vendor/hashie/lib/hashie/extensions/merge_initializer.rb",
-    "vendor/hashie/lib/hashie/extensions/method_access.rb",
-    "vendor/hashie/lib/hashie/extensions/structure.rb",
-    "vendor/hashie/lib/hashie/hash.rb",
-    "vendor/hashie/lib/hashie/hash_extensions.rb",
-    "vendor/hashie/lib/hashie/mash.rb",
-    "vendor/hashie/lib/hashie/trash.rb",
-    "vendor/hashie/lib/hashie/version.rb"
+    "vendor/hashie2/lib/hashie2.rb",
+    "vendor/hashie2/lib/hashie2/clash.rb",
+    "vendor/hashie2/lib/hashie2/dash.rb",
+    "vendor/hashie2/lib/hashie2/extensions/coercion.rb",
+    "vendor/hashie2/lib/hashie2/extensions/deep_merge.rb",
+    "vendor/hashie2/lib/hashie2/extensions/indifferent_access.rb",
+    "vendor/hashie2/lib/hashie2/extensions/key_conversion.rb",
+    "vendor/hashie2/lib/hashie2/extensions/merge_initializer.rb",
+    "vendor/hashie2/lib/hashie2/extensions/method_access.rb",
+    "vendor/hashie2/lib/hashie2/extensions/structure.rb",
+    "vendor/hashie2/lib/hashie2/hash.rb",
+    "vendor/hashie2/lib/hashie2/hash_extensions.rb",
+    "vendor/hashie2/lib/hashie2/mash.rb",
+    "vendor/hashie2/lib/hashie2/trash.rb",
+    "vendor/hashie2/lib/hashie2/version.rb"
   ]
   s.homepage = %q{http://github.com/doublewide/hashie-model}
   s.licenses = [%q{MIT}]
   s.require_paths = [%q{lib}]
   s.rubygems_version = %q{1.8.6}
-  s.summary = %q{Hashie + ActiveModel 3.x}
+  s.summary = %q{Hashie2 + ActiveModel 3.x}
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
