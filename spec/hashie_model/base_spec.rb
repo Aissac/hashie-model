@@ -127,4 +127,55 @@ describe HashieModel::Base do
     it { should serialize_to(json) }
     it { should deserialize_from(json) }
   end
+  
+  describe "YAML serialization" do
+    let(:yaml) {
+      <<-YAML.gsub(/^\s{6}/m, '')
+      --- !ruby/object:BarModel
+      must_have: here
+      cash: !ruby/object:HashieModel::Money
+        cents: 4200
+        currency: !ruby/object:Money::Currency
+          id: :usd
+          priority: 1
+          iso_code: USD
+          name: United States Dollar
+          symbol: $
+          subunit: Cent
+          subunit_to_unit: 100
+          symbol_first: true
+          html_entity: $
+          decimal_mark: .
+          thousands_separator: ! ','
+        bank: &70263216595100 !ruby/object:Money::Bank::VariableExchange
+          rounding_method: 
+          rates: {}
+          mutex: !ruby/object:Mutex {}
+      foos:
+      - !ruby/object:FooModel
+        x: x-value
+        y: !ruby/object:HashieModel::Money
+          cents: 7595
+          currency: !ruby/object:Money::Currency
+            id: :usd
+            priority: 1
+            iso_code: USD
+            name: United States Dollar
+            symbol: $
+            subunit: Cent
+            subunit_to_unit: 100
+            symbol_first: true
+            html_entity: $
+            decimal_mark: .
+            thousands_separator: ! ','
+          bank: *70263216595100
+      YAML
+    }
+    
+    subject { bar }
+    
+    it { should yaml_serialize_to(yaml) }
+    it { should yaml_deserialize_from(yaml) }
+    
+  end
 end

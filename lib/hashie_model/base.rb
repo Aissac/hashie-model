@@ -42,6 +42,16 @@ module HashieModel
       end
     end
     
+    def init_with(coder)
+      coder.map.each do |k, v|
+        self.send(:"#{k}=", v)
+      end
+    end
+    
+    def encode_with(coder)
+      coder.represent_map(coder.tag, self)
+    end
+    
     def attributes_before_type_cast
       @attributes_before_type_cast ||= {}
     end

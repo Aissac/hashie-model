@@ -63,6 +63,30 @@ RSpec::Matchers.define :deserialize_from do |json|
   end
 end
 
+RSpec::Matchers.define :yaml_serialize_to do |yaml|
+  description { "serialize to YAML" }
+  expected = YAML.load(yaml)
+  
+  match do |object|
+    actual = YAML.load(object.to_yaml)
+    actual == expected
+  end
+  
+  failure_message_for_should do |object|
+    actual = YAML.load(object.to_yaml)
+    "expected that #{object} would serialize to #{expected.pretty_inspect}Diff:#{RSpec::Expectations.differ.diff_as_object(actual, expected)}"
+  end
+end
+
+RSpec::Matchers.define :yaml_deserialize_from do |yaml|
+  description { "deserialize from YAML" }
+  
+  match do |object|
+    new_object = YAML.load(yaml)
+    new_object.is_a?(object.class) && new_object.eql?(object)
+  end
+end
+
 RSpec::Matchers.define :act_as_array do |array_klass|
   match do |object|
     klass    = object.class
