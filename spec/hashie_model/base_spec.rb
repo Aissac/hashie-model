@@ -21,7 +21,11 @@ describe HashieModel::Base do
     
     validates_associated :foos
   end
-  
+
+  class SubFooModel < FooModel
+    prop :w, HashieModel::Money
+  end
+
   let(:foo) {
     FooModel.new({
       :x => 'x-value',
@@ -35,6 +39,14 @@ describe HashieModel::Base do
       :cash      => "42.00",
       :foos      => [foo]
     })
+  }
+
+  let(:subfoo) {
+    SubFooModel.new(
+      :w => '100.00',
+      :x => 'x-value',
+      :y => '75.95'
+    )
   }
   
   describe "#persisted?" do
@@ -69,11 +81,19 @@ describe HashieModel::Base do
         foo.z_before_type_cast.should == "abc"
       end
     end
-    
+
     subject { bar }
     
     it { should have_property(:must_have, :required => true) }
     it { should have_property(:cash, HashieModel::Money) }
+
+    context "inheritance" do
+      subject { subfoo }
+
+      it { should have_property(:w, HashieModel::Money) }
+      it { should have_property(:y, HashieModel::Money) }
+    end
+
   end
   
   describe "HashieModel.array_of" do
@@ -82,7 +102,7 @@ describe HashieModel::Base do
     it { should have_property(:foos, ArrayOfFoo) }
     it { foo.should act_as_array(ArrayOfFoo) }
   end
-  
+
   describe "validations" do
     subject { foo }
     
