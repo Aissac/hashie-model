@@ -71,7 +71,7 @@ module HashieModel
     def merge(options)
       h = to_hash
       h.merge!(options.stringify_keys)
-      self.class.new(h)
+      return h
     end
     
     def persisted?
