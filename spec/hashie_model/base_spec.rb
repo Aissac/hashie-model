@@ -43,6 +43,24 @@ describe HashieModel::Base do
     
     it { should be_false }
   end
+
+  describe "#dup" do
+    it "returns a duplicate" do
+      foo.dup.should == FooModel.new({
+        :x => 'x-value',
+        :y => '75.95'
+      })
+    end
+  end
+
+  describe "#merge" do
+    it "merges the attributes" do
+      foo.merge(:x => 'alt-x').should == FooModel.new({
+        :x => 'alt-x',
+        :y => '75.95'
+      })
+    end
+  end
   
   describe "properties" do
     describe "#prop" do

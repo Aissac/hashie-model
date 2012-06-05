@@ -63,6 +63,16 @@ module HashieModel
         end
       end
     end
+
+    def dup
+      self.class.new(to_hash)
+    end
+
+    def merge(options)
+      h = to_hash
+      h.merge!(options.stringify_keys)
+      self.class.new(h)
+    end
     
     def persisted?
       false
