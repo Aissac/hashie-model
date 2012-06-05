@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "hashie-model"
-  s.version = "1.3.1"
+  s.version = "1.3.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["ZenCash.com"]
-  s.date = "2012-02-03"
+  s.date = "2012-06-05"
   s.description = "Hashie2 + ActiveModel 3, offering declared properties, validations, JSON serialization/deserialization"
   s.email = "istvan@zencash.com"
   s.extra_rdoc_files = [
@@ -46,7 +46,7 @@ Gem::Specification.new do |s|
   s.homepage = "http://github.com/doublewide/hashie-model"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = "1.8.15"
+  s.rubygems_version = "1.8.21"
   s.summary = "Hashie2 + ActiveModel 3.x"
 
   if s.respond_to? :specification_version then
@@ -57,62 +57,38 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<activesupport>, [">= 3.1.1"])
       s.add_runtime_dependency(%q<activemodel>, [">= 3.1.1"])
       s.add_runtime_dependency(%q<money>, [">= 3.7.1"])
-      s.add_development_dependency(%q<linecache19>, ["~> 0.5.13"])
-      s.add_development_dependency(%q<ruby-debug-base19>, ["~> 0.11.26"])
-      s.add_development_dependency(%q<ruby-debug19>, [">= 0"])
+      s.add_development_dependency(%q<debugger>, ["~> 1.1.3"])
       s.add_development_dependency(%q<rspec>, ["~> 2.8.0"])
       s.add_development_dependency(%q<shoulda-matchers>, ["~> 1.0.0.beta3"])
       s.add_development_dependency(%q<yard>, [">= 0.7.0"])
-      s.add_development_dependency(%q<bundler>, ["~> 1.0.0"])
+      s.add_development_dependency(%q<bundler>, [">= 1.0.0"])
       s.add_development_dependency(%q<jeweler>, ["~> 1.6.4"])
       s.add_development_dependency(%q<rcov>, [">= 0"])
-      s.add_development_dependency(%q<rb-fsevent>, [">= 0"])
-      s.add_development_dependency(%q<growl>, [">= 0"])
-      s.add_development_dependency(%q<guard>, [">= 0"])
-      s.add_development_dependency(%q<guard-rspec>, [">= 0"])
-      s.add_development_dependency(%q<guard-yard>, [">= 0"])
-      s.add_development_dependency(%q<guard-bundler>, [">= 0"])
     else
       s.add_dependency(%q<yajl-ruby>, [">= 0.8.0"])
       s.add_dependency(%q<activesupport>, [">= 3.1.1"])
       s.add_dependency(%q<activemodel>, [">= 3.1.1"])
       s.add_dependency(%q<money>, [">= 3.7.1"])
-      s.add_dependency(%q<linecache19>, ["~> 0.5.13"])
-      s.add_dependency(%q<ruby-debug-base19>, ["~> 0.11.26"])
-      s.add_dependency(%q<ruby-debug19>, [">= 0"])
+      s.add_dependency(%q<debugger>, ["~> 1.1.3"])
       s.add_dependency(%q<rspec>, ["~> 2.8.0"])
       s.add_dependency(%q<shoulda-matchers>, ["~> 1.0.0.beta3"])
       s.add_dependency(%q<yard>, [">= 0.7.0"])
-      s.add_dependency(%q<bundler>, ["~> 1.0.0"])
+      s.add_dependency(%q<bundler>, [">= 1.0.0"])
       s.add_dependency(%q<jeweler>, ["~> 1.6.4"])
       s.add_dependency(%q<rcov>, [">= 0"])
-      s.add_dependency(%q<rb-fsevent>, [">= 0"])
-      s.add_dependency(%q<growl>, [">= 0"])
-      s.add_dependency(%q<guard>, [">= 0"])
-      s.add_dependency(%q<guard-rspec>, [">= 0"])
-      s.add_dependency(%q<guard-yard>, [">= 0"])
-      s.add_dependency(%q<guard-bundler>, [">= 0"])
     end
   else
     s.add_dependency(%q<yajl-ruby>, [">= 0.8.0"])
     s.add_dependency(%q<activesupport>, [">= 3.1.1"])
     s.add_dependency(%q<activemodel>, [">= 3.1.1"])
     s.add_dependency(%q<money>, [">= 3.7.1"])
-    s.add_dependency(%q<linecache19>, ["~> 0.5.13"])
-    s.add_dependency(%q<ruby-debug-base19>, ["~> 0.11.26"])
-    s.add_dependency(%q<ruby-debug19>, [">= 0"])
+    s.add_dependency(%q<debugger>, ["~> 1.1.3"])
     s.add_dependency(%q<rspec>, ["~> 2.8.0"])
     s.add_dependency(%q<shoulda-matchers>, ["~> 1.0.0.beta3"])
     s.add_dependency(%q<yard>, [">= 0.7.0"])
-    s.add_dependency(%q<bundler>, ["~> 1.0.0"])
+    s.add_dependency(%q<bundler>, [">= 1.0.0"])
     s.add_dependency(%q<jeweler>, ["~> 1.6.4"])
     s.add_dependency(%q<rcov>, [">= 0"])
-    s.add_dependency(%q<rb-fsevent>, [">= 0"])
-    s.add_dependency(%q<growl>, [">= 0"])
-    s.add_dependency(%q<guard>, [">= 0"])
-    s.add_dependency(%q<guard-rspec>, [">= 0"])
-    s.add_dependency(%q<guard-yard>, [">= 0"])
-    s.add_dependency(%q<guard-bundler>, [">= 0"])
   end
 end
 
