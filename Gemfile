@@ -9,9 +9,10 @@ group :development do
   gem 'bundler', '>= 1.0.0'
   gem 'jeweler', '~> 1.6.4'
   gem 'rcov', '>= 0'
+  gem 'pry'
 end
 
 gem 'yajl-ruby',     '>= 0.8.0'
-gem 'activesupport', '>= 3.1.1'
-gem 'activemodel',   '>= 3.1.1'
+gem 'activesupport', '>= 3.2.5'
+gem 'activemodel',   '>= 3.2.5'
 gem 'money',         '>= 3.7.1'
