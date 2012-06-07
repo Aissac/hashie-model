@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "hashie-model"
-  s.version = "1.3.5"
+  s.version = "1.3.6"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["ZenCash.com"]
-  s.date = "2012-06-05"
+  s.date = "2012-06-07"
   s.description = "Hashie2 + ActiveModel 3, offering declared properties, validations, JSON serialization/deserialization"
   s.email = "istvan@zencash.com"
   s.extra_rdoc_files = [
@@ -46,7 +46,7 @@ Gem::Specification.new do |s|
   s.homepage = "http://github.com/doublewide/hashie-model"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = "1.8.21"
+  s.rubygems_version = "1.8.24"
   s.summary = "Hashie2 + ActiveModel 3.x"
 
   if s.respond_to? :specification_version then
