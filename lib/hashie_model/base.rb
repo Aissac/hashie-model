@@ -18,7 +18,9 @@ module HashieModel
         end
         
         property(name, options)
-        
+
+        self.superclass.key_coercions.each_pair { |key, into| coerce_key(key, into) }
+
         if type
           coerce_key(name.to_sym, type)
           coerce_key(name.to_s, type)
