@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["ZenCash.com"]
-  s.date = "2012-06-05"
+  s.date = "2012-06-13"
   s.description = "Hashie2 + ActiveModel 3, offering declared properties, validations, JSON serialization/deserialization"
   s.email = "istvan@zencash.com"
   s.extra_rdoc_files = [
