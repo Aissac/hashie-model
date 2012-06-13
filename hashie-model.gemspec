@@ -46,7 +46,7 @@ Gem::Specification.new do |s|
   s.homepage = "http://github.com/doublewide/hashie-model"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = "1.8.24"
+  s.rubygems_version = "1.8.21"
   s.summary = "Hashie2 + ActiveModel 3.x"
 
   if s.respond_to? :specification_version then
