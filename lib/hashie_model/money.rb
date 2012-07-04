@@ -1,8 +1,9 @@
 module HashieModel
   class Money < ::Money
     def self.coerce(value)
-      cents = value.is_a?(::Money) ? value.cents : value.to_money(:USD).cents
-      new(cents, :USD)
+      currency = value.respond_to?(:currency) ? value.currency : 'USD'.to_currency
+      cents    = value.respond_to?(:cents) ? value.cents : value.to_money(currency).cents
+      new(cents, currency)
     end
     
     def as_json(options=nil)
