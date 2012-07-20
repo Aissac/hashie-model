@@ -3,7 +3,7 @@ source 'http://rubygems.org'
 group :development do
   gem 'debugger', '~> 1.1.3'
   
-  gem 'rspec', '~> 2.8.0'
+  gem 'rspec', '~> 2.11.0'
   gem 'shoulda-matchers', '~> 1.0.0.beta3'
   gem 'yard', '>= 0.7.0'
   gem 'bundler', '>= 1.0.0'

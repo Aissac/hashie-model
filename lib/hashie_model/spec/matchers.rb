@@ -100,7 +100,15 @@ end
 RSpec::Matchers.define :validate_associated do |attribute|
   match do |component|
     errors = mock("#{component} errors", :empty? => false)
-    component.stub(attribute => mock("#{component.class}.#{attribute}", :errors => errors, :valid? => false))
+    
+    attribute_double = mock("#{component.class}.#{attribute}", {
+      :errors => errors,
+      :valid? => false,
+      :present? => true,
+      :blank? => false
+    }).as_null_object
+    
+    component.stub(attribute => attribute_double)
     is_invalid = !component.valid?
     right_error_count = component.errors[attribute].size == 1
     
