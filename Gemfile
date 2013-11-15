@@ -8,7 +8,7 @@ group :development do
   gem 'shoulda-matchers', '~> 1.0.0.beta3'
   gem 'yard', '>= 0.7.0'
   gem 'bundler', '>= 1.0.0'
-  gem 'jeweler', '~> 1.6.4'
+  gem 'jeweler', '~> 1.8.8'
   gem 'rcov', '>= 0'
 end
 
