@@ -63,7 +63,7 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<shoulda-matchers>, ["~> 1.0.0.beta3"])
       s.add_development_dependency(%q<yard>, [">= 0.7.0"])
       s.add_development_dependency(%q<bundler>, [">= 1.0.0"])
-      s.add_development_dependency(%q<jeweler>, ["~> 1.6.4"])
+      s.add_development_dependency(%q<jeweler>, ["~> 1.8.8"])
       s.add_development_dependency(%q<rcov>, [">= 0"])
     else
       s.add_dependency(%q<yajl-ruby>, [">= 0.8.0"])
@@ -76,7 +76,7 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<shoulda-matchers>, ["~> 1.0.0.beta3"])
       s.add_dependency(%q<yard>, [">= 0.7.0"])
       s.add_dependency(%q<bundler>, [">= 1.0.0"])
-      s.add_dependency(%q<jeweler>, ["~> 1.6.4"])
+      s.add_dependency(%q<jeweler>, ["~> 1.8.8"])
       s.add_dependency(%q<rcov>, [">= 0"])
     end
   else
@@ -90,7 +90,7 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<shoulda-matchers>, ["~> 1.0.0.beta3"])
     s.add_dependency(%q<yard>, [">= 0.7.0"])
     s.add_dependency(%q<bundler>, [">= 1.0.0"])
-    s.add_dependency(%q<jeweler>, ["~> 1.6.4"])
+    s.add_dependency(%q<jeweler>, ["~> 1.8.8"])
     s.add_dependency(%q<rcov>, [">= 0"])
   end
 end
