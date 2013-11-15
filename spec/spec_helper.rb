@@ -1,6 +1,9 @@
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 
+require 'debugger'
+require 'pry'
+
 require 'hashie-model'
 require 'rspec'
 require 'shoulda-matchers'
