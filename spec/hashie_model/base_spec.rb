@@ -133,11 +133,12 @@ describe HashieModel::Base do
       it { should validate_associated(:foos) }
       
       it "nests errors on associations" do
+        valid_foo = FooModel.new(x: 'hello', y: 62)
         invalid_foo = FooModel.new
-        subject.foos = [invalid_foo]
-        
+        subject.foos = [valid_foo, invalid_foo]
+
         invalid_foo.valid?
-        
+
         subject.valid?
         subject.errors[:foos].map(&:full_messages).should == [invalid_foo.errors.full_messages]
       end
