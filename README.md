@@ -1,5 +1,7 @@
 # Hashie Model
 
+[![Build Status](https://travis-ci.org/doublewide/hashie-model.svg?branch=master)](https://travis-ci.org/doublewide/hashie-model)
+
 Hashie + ActiveModel 3.x
 
 # Contributors
