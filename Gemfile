@@ -1,7 +1,8 @@
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 
 group :development do
-  gem 'debugger'
+  gem 'debugger', platforms: [:mri_19]
+  gem 'byebug', platforms: [:mri_20, :mri_21]
   gem 'pry'
   
   gem 'rspec', '~> 2.11.0'
@@ -9,7 +10,6 @@ group :development do
   gem 'yard', '>= 0.7.0'
   gem 'bundler', '>= 1.0.0'
   gem 'jeweler', '~> 1.8.8'
-  gem 'rcov', '>= 0'
 end
 
 gem 'yajl-ruby',     '>= 0.8.0'

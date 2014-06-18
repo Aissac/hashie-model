@@ -1,7 +1,12 @@
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 
-require 'debugger'
+begin
+  require 'debugger'
+rescue LoadError
+  require 'byebug'
+end
+
 require 'pry'
 
 require 'hashie-model'
