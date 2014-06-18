@@ -15,4 +15,5 @@ end
 gem 'yajl-ruby',     '>= 0.8.0'
 gem 'activesupport', '>= 3.2.5'
 gem 'activemodel',   '>= 3.2.5'
-gem 'money',         '>= 3.7.1'
+gem 'money',         '~> 6.1.1'
+gem 'monetize',      '~> 0.3.0'

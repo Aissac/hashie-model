@@ -13,6 +13,7 @@ require 'active_support'
 require 'active_support/core_ext'
 require 'active_support/json'
 require 'money'
+require 'monetize'
 
 module HashieModel
   extend ActiveSupport::Autoload

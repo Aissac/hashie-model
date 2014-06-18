@@ -173,41 +173,46 @@ describe HashieModel::Base do
       --- !ruby/object:BarModel
       must_have: here
       cash: !ruby/object:HashieModel::Money
-        cents: 4200
+        fractional: 4200.0
         currency: !ruby/object:Money::Currency
           id: :usd
           priority: 1
           iso_code: USD
           name: United States Dollar
           symbol: $
+          alternate_symbols: &70189342737220
+          - US$
           subunit: Cent
           subunit_to_unit: 100
           symbol_first: true
           html_entity: $
           decimal_mark: .
           thousands_separator: ! ','
-        bank: &70263216595100 !ruby/object:Money::Bank::VariableExchange
-          rounding_method: 
+          iso_numeric: '840'
+        bank: &70189342663000 !ruby/object:Money::Bank::VariableExchange
+          rounding_method:
           rates: {}
           mutex: !ruby/object:Mutex {}
-      foos:
+      foos: !ruby/array:ArrayOfFoo
       - !ruby/object:FooModel
         x: x-value
         y: !ruby/object:HashieModel::Money
-          cents: 7595
+          fractional: 7595.0
           currency: !ruby/object:Money::Currency
             id: :usd
             priority: 1
             iso_code: USD
             name: United States Dollar
             symbol: $
+            alternate_symbols: *70189342737220
             subunit: Cent
             subunit_to_unit: 100
             symbol_first: true
             html_entity: $
             decimal_mark: .
             thousands_separator: ! ','
-          bank: *70263216595100
+            iso_numeric: '840'
+          bank: *70189342663000
       YAML
     }
     
