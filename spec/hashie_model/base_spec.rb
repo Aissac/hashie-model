@@ -53,7 +53,7 @@ describe HashieModel::Base do
     let(:component) { HashieModel::Base.new }
     subject { component.persisted? }
     
-    it { should be_false }
+    it { should be_falsey }
   end
 
   describe "#dup" do
@@ -84,9 +84,9 @@ describe HashieModel::Base do
       end
       
       it "defines presence methods" do
-        foo.z?.should be_false
+        foo.z?.should be_falsey
         foo.z = '12'
-        foo.z?.should be_true
+        foo.z?.should be_truthy
       end
       
       it "performs coercion" do

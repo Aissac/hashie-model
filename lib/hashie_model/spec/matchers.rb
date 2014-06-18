@@ -99,9 +99,9 @@ end
 
 RSpec::Matchers.define :validate_associated do |attribute|
   match do |component|
-    errors = mock("#{component} errors", :empty? => false)
+    errors = double("#{component} errors", :empty? => false)
     
-    attribute_double = mock("#{component.class}.#{attribute}", {
+    attribute_double = double("#{component.class}.#{attribute}", {
       :errors => errors,
       :valid? => false,
       :present? => true,
