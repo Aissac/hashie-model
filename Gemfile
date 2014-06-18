@@ -12,8 +12,8 @@ group :development do
   gem 'jeweler', '~> 1.8.8'
 end
 
-gem 'yajl-ruby',     '>= 0.8.0'
-gem 'activesupport', '>= 3.2.5'
-gem 'activemodel',   '>= 3.2.5'
-gem 'money',         '~> 6.1.1'
-gem 'monetize',      '~> 0.3.0'
+gem 'yajl-ruby',     '~> 0.8'
+gem 'activesupport', '~> 3.2'
+gem 'activemodel',   '~> 3.2'
+gem 'money',         '~> 6.1'
+gem 'monetize',      '~> 0.3'
