@@ -12,7 +12,7 @@ group :development do
   gem 'jeweler', '~> 1.8.8'
 end
 
-gem 'yajl-ruby',     '~> 0.8'
+gem 'yajl-ruby',     '~> 1.1'
 gem 'activesupport', '~> 3.2'
 gem 'activemodel',   '~> 3.2'
 gem 'money',         '~> 6.1'

@@ -81,7 +81,7 @@ GEM
     rspec-mocks (2.11.1)
     shoulda-matchers (1.0.0.beta3)
     slop (2.4.4)
-    yajl-ruby (0.8.3)
+    yajl-ruby (1.1.0)
     yard (0.7.3)
 
 PLATFORMS
@@ -99,5 +99,5 @@ DEPENDENCIES
   pry
   rspec (~> 2.11.0)
   shoulda-matchers (~> 1.0.0.beta3)
-  yajl-ruby (~> 0.8)
+  yajl-ruby (~> 1.1)
   yard (>= 0.7.0)
