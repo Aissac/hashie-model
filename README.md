@@ -7,5 +7,6 @@ Hashie + ActiveModel 3.x
 * [Istvan Hoka](https://github.com/ihoka)
 * [Florin Oltean](https://github.com/florin555)
 * [Erik Reedstrom](https://github.com/erikreedstrom)
+* [Cristi Duma](https://github.com/cristi)
 
 &copy; 2011 Doublewide Partners I, LLC
