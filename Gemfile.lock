@@ -68,7 +68,7 @@ GEM
       method_source (~> 0.7.1)
       slop (>= 2.4.4, < 3)
     rack (1.5.2)
-    rake (10.1.0)
+    rake (10.4.2)
     rdoc (4.0.1)
       json (~> 1.4)
     rspec (2.99.0)
